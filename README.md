@@ -1,6 +1,6 @@
 ## Introduction
 
-This sample Ballerina app provide you a basic understanding about how to use Ballerina gmail and spreadsheet connectors. Here we implemented a simple bot type of use case. We have a shop where it receives large number of emails from customer in daily basis. The shop owner does not have enough number of people to assign to manually reply to those custom queries. Instead he is going to have this app which will automatically send replies according to customer requirements.
+This sample Ballerina app provides you a basic understanding of how to use Ballerina Gmail and spreadsheet connectors. Here we implemented a simple bot type of use case. We have a shop where it receives a large number of emails from customers daily. The shop owner does not have enough number of people to assign to manually reply to those custom queries. Instead he is going to have this app which will automatically send replies according to customer requirements.
 
 #### This app works as follows:
 
@@ -12,7 +12,7 @@ The shop has to maintain a google sheet which contain the following information.
     information | Hi, valued customer, <br /> For more inforamtion about our products please refer to out website abc.com. <br /><br /> Thanks.
     promotions  | Hi, valued customer, <br /> You can find out all the current promotion details from here abc.com/promotions. <br /><br /> Thanks.
 
-The app will retrieve all the unread messages from the given email, if these keywords exists in each email, this app will send the correcponding reply to the customer.
+The app will retrieve all the unread messages from the given email, if these keywords exist in each email, this app will send the corresponding reply to the customer.
 
 ## Steps to run
 
@@ -25,11 +25,11 @@ The app will retrieve all the unread messages from the given email, if these key
     Access Token and Refresh Token).
     1. Click **Create**. Your Client ID and Client Secret will appear.
     1. In a separate browser window or tab, visit [OAuth 2.0 Playground](https://developers.google.com/oauthplayground). Click on the `OAuth 2.0 Configuration`
-    icon in the top right corner and click on `Use your own OAuth credentials` and provide your `OAuth Client ID` and `OAuth Client Secret`.
+    icon in the top right corner and click on `Use your OAuth credentials` and provide your `OAuth Client ID` and `OAuth Client Secret`.
     1. Select the required Gmail API and Google Sheets API scopes from the list of API's, and then click **Authorize APIs**.
     1. When you receive your authorization code, click **Exchange authorization code for tokens** to obtain the refresh token and access token.
 
-1. After the above configurations, you will obtain the relavant tokens. Add the appropriate tokens to the `./Ballerina.conf` file.
+1. After the above configurations, you will obtain the relevant tokens. Add the appropriate tokens to the `./Ballerina.conf` file.
 
     ```conf
     ACCESS_TOKEN="<ACCESS_TOKEN>"
